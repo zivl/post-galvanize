@@ -1,0 +1,22 @@
+{
+  "name": "post-galvanize",
+  "version": "0.0.1",
+  "description": "promote posts on board sites",
+  "main": "index.js",
+  "scripts": {
+    "test": "node youtube.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zivl/post-galvanize.git"
+  },
+  "author": "Ziv Levy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zivl/post-galvanize/issues"
+  },
+  "homepage": "https://github.com/zivl/post-galvanize#readme",
+  "dependencies": {
+    "puppeteer": "^1.7.0"
+  }
+}
