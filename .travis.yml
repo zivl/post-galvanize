@@ -1,0 +1,10 @@
+language: node_js
+node_js: node
+services: xvfb
+addons:
+  apt:
+    packages:
+      - google-chrome
+
+script:
+  - npm run test
