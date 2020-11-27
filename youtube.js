@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer')
 
 const LESS_THAN_2_NETWORK_CONNECTIONS = 'networkidle2'
 ;(async () => {
-  for (let i = 0; i < 100; i++) {
+  // for (let i = 0; i < 100; i++) {
     const browser = await puppeteer.launch({headless: false,args: [
       '--incognito',
     ]});
@@ -12,5 +12,5 @@ const page = await context.newPage();
 //      await new Promise(resolve => setTimeout(resolve, 1800000))
     await new Promise(resolve => setTimeout(resolve, 120000))
     await browser.close();
-  }
+  // }
 })()
