@@ -4,9 +4,7 @@ node_js:
   - 12
 services: xvfb
 addons:
-  apt:
-    packages:
-      - google-chrome
+  chrome: stable
 
 script:
   - npm run test
