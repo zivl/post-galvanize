@@ -5,7 +5,5 @@ node_js:
 services: xvfb
 addons:
   chrome: stable
-before_script:
-  - mkdir dist
 script:
   - npm test
