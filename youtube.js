@@ -11,8 +11,8 @@ const MINUTE = 60000
   const page = await browser.newPage()
   await page.goto('https://youtu.be/Fqa32bZVpu4')
   await new Promise((resolve) => {
-    setTimeout(resolve, 10 * MINUTE)
-    setInterval(() => console.log('still watching...'), 2 * MINUTE)
+    setTimeout(resolve, 9 * MINUTE)
+    // setInterval(() => console.log('still watching...'), 2 * MINUTE)
   })
   await page.screenshot({ path: './screenshot.png' })
   await browser.close()
