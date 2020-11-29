@@ -3,8 +3,8 @@ const puppeteer = require('puppeteer')
 const MINUTE = 60000
 
 function applyTimers(resolve) {
-  setInterval(() => console.log('still watching...'), 5 * MINUTE)
-  setTimeout(resolve, 30 * MINUTE)
+  setInterval(() => console.log('still watching...'), 2 * MINUTE)
+  setTimeout(resolve, 10 * MINUTE)
 }
 
 ;(async () => {
