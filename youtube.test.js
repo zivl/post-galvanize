@@ -1,10 +1,10 @@
 require('expect-puppeteer')
 
 const MINUTE = 60000
-const MAX_TIME = 2 * MINUTE
+const MAX_TIME = 20 * MINUTE
 const LESS_THAN_2_NETWORK_CONNECTIONS = 'networkidle2'
 
-jest.setTimeout(10 * MINUTE)
+jest.setTimeout(MAX_TIME * 1.2)
 
 describe('youtube', () => {
   beforeAll(async () => {
@@ -31,7 +31,7 @@ describe('youtube', () => {
     await page.keyboard.press(String.fromCharCode(13))
     await expect(page).toClick('a', { text: 'DJ Ziv Levy - Live at Whaaaat Coffee', delay: 300 })
     // await page.screenshot({ path: './screenshot.png' })
-    setInterval(() => console.log('still watching...'), 0.25 * MINUTE)
+    setInterval(() => console.log('still watching...'), MINUTE)
     await new Promise((resolve) => {
       setTimeout(resolve, MAX_TIME)
     })
