@@ -4,8 +4,8 @@
   "description": "promote posts on board sites",
   "main": "index.js",
   "scripts": {
-    "test": "node youtube.js --unhandled-rejections=warn-with-error-code",
-    "test:debug": "env DEBUG='puppeteer:*' env DEBUG_COLORS=true node youtube.js --unhandled-rejections=warn-with-error-code"
+    "test": "jest --force-exit",
+    "test:debug": "env DEBUG='puppeteer:*' env DEBUG_COLORS=true node jest"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,15 @@
     "url": "https://github.com/zivl/post-galvanize/issues"
   },
   "homepage": "https://github.com/zivl/post-galvanize#readme",
-  "dependencies": {
-    "puppeteer": "^1.13.0"
+  "devDependencies": {
+    "@types/puppeteer": "5.4.2",
+    "@types/jest": "26.0.19",
+    "@types/jest-environment-puppeteer": "4.4.1",
+    "jest": "26.6.3",
+    "jest-puppeteer": "4.4.0",
+    "puppeteer": "5.5.0"
+  },
+  "jest": {
+    "preset": "jest-puppeteer"
   }
 }
