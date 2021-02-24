@@ -1,7 +1,7 @@
 require('expect-puppeteer')
 
 const MINUTE = 60000
-const MAX_TIME = 0.5 * MINUTE
+const MAX_TIME = 20 * MINUTE
 const LESS_THAN_2_NETWORK_CONNECTIONS = 'networkidle2'
 
 jest.setTimeout(MAX_TIME * 1.5)
