@@ -29,14 +29,14 @@ describe('youtube', () => {
     await page.keyboard.type('v', { delay: 300 })
     await page.keyboard.type('y', { delay: 300 })
     await page.keyboard.press(String.fromCharCode(13))
-    await expect(page).toClick('a', { text: 'DJ Ziv Levy - Live at Whaaaat Coffee', delay: 300 })
+    await expect(page).toClick('a', { text: 'A Very Retro Synthetic Wave', delay: 300 })
     // await page.screenshot({ path: './screenshot.png' })
     const intervalId = setInterval(() => console.log('still watching...'), 0.25 * MINUTE)
     await new Promise((resolve) => {
       setTimeout(resolve, MAX_TIME)
     })
     global.clearInterval(intervalId)
-    await expect(page).toMatch('DJ Ziv Levy - Live at Whaaaat Coffee')
+    await expect(page).toMatch('A Very Retro Synthetic Wave')
     await page.close()
   });
 });
