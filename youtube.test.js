@@ -37,6 +37,5 @@ describe('youtube', () => {
     })
     global.clearInterval(intervalId)
     await expect(page).toMatch('DJ Ziv Levy - Live at Whaaaat Coffee')
-    await page.close()
   });
 });

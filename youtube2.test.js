@@ -37,6 +37,5 @@ describe('youtube', () => {
     })
     global.clearInterval(intervalId)
     await expect(page).toMatch('A Very Retro Synthetic Wave')
-    await page.close()
   });
 });
