@@ -36,6 +36,6 @@ describe('youtube', () => {
       setTimeout(resolve, MAX_TIME)
     })
     global.clearInterval(intervalId)
-    await expect(page).toMatch('A Very Retro Synthetic Wave')
+    await expect(page).toMatch('A Very Synthetic Retro Wave')
   });
 });
