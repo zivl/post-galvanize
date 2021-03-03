@@ -4,7 +4,7 @@ const MINUTE = 60000
 const MAX_TIME = 20 * MINUTE
 const LESS_THAN_2_NETWORK_CONNECTIONS = 'networkidle2'
 
-jest.setTimeout(MAX_TIME * 1.5)
+jest.setTimeout(MAX_TIME * 2)
 
 describe('youtube', () => {
   beforeAll(async () => {

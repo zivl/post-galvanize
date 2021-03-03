@@ -4,7 +4,7 @@ const MINUTE = 60000
 const MAX_TIME = 20 * MINUTE
 const LESS_THAN_2_NETWORK_CONNECTIONS = 'networkidle2'
 
-jest.setTimeout(MAX_TIME * 1.5)
+jest.setTimeout(MAX_TIME * 2)
 
 describe('youtube', () => {
   beforeAll(async () => {
@@ -29,7 +29,7 @@ describe('youtube', () => {
     await page.keyboard.type('v', { delay: 300 })
     await page.keyboard.type('y', { delay: 300 })
     await page.keyboard.press(String.fromCharCode(13))
-    await expect(page).toClick('a', { text: 'A Very Retro Synthetic Wave', delay: 300 })
+    await expect(page).toClick('a', { text: 'A Very Synthetic Retro Wave', delay: 300 })
     // await page.screenshot({ path: './screenshot.png' })
     const intervalId = setInterval(() => console.log('still watching...'), 0.25 * MINUTE)
     await new Promise((resolve) => {

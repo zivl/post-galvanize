@@ -4,7 +4,7 @@
   "description": "promote posts on board sites",
   "main": "index.js",
   "scripts": {
-    "test": "jest --runInBand --forceExit",
+    "test": "jest --runInBand --forceExit --silent=false",
     "test:debug": "env DEBUG='puppeteer:*' env DEBUG_COLORS=true node jest"
   },
   "repository": {
